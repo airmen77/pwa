@@ -16,7 +16,7 @@
       <template v-else>
         <div id="navMobile">
           <template v-for="(route, i) in routes">
-            <router-link :to="route.path" :key="i">
+            <router-link :to="route.path" :key="i"  v-if="route.icon">
               <img :src="imgPath(route.icon)" :alt="route.name">
             </router-link>
           </template>

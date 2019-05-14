@@ -28,6 +28,10 @@ export default new Router({
       name: 'list',
       icon: 'outline-list-24px.svg',
       component: () => import('./views/List.vue')
+    },
+    {
+      path: '*',
+      component: Home
     }
   ]
 })

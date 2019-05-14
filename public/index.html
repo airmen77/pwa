@@ -12,6 +12,14 @@
       <strong>We're sorry but test-pwa doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <div class="cbalink">fff</div>
     <!-- built files will be auto injected -->
+    <script>
+      requestAnimationFrame(() => {
+        if (document.querySelector('.cbalink')) {
+          document.querySelector('.cbalink').remove()
+        }
+      })
+    </script>
   </body>
 </html>
